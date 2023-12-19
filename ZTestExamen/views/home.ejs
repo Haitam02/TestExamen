@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="home.css" />
+    <title>TEST Examen Blanc</title>
+</head>
+
+<body>
+    <h1>Examen Blanc</h1>
+    <h2>Liste test Examen</h2>
+
+    <table id="liste1">
+        <thead>
+            <th>id </th>
+            <th>NOM </th>
+        </thead>
+        <tbody>
+            <% for(var i=0; i < TestExamen.length; i++) {%>
+                <tr>
+                    <td>
+                        <%= TestExamen[i].id %>
+                    </td>
+                    <td>
+                        <%= TestExamen[i].Nom %>
+                    </td>
+                </tr>
+
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
